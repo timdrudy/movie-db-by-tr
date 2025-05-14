@@ -8,12 +8,14 @@ import { faBars, faShoppingCart,faTimes } from '@fortawesome/free-solid-svg-icon
 
 library.add(faBars, faShoppingCart, faTimes)
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-document.getElementById('root')
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
+
 
 
 // If you want to start measuring performance in your app, pass a function
